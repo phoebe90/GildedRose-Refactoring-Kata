@@ -19,14 +19,6 @@ public class Item {
         return this.name + ", " + this.sellIn + ", " + this.quality;
     }
 
-    public void upgradeNormal(GildedRose gildedRose) {
-        sellIn = sellIn - 1;
-        decreaseQuality();
-        if (sellIn < 0) {
-            decreaseQuality();
-        }
-    }
-
     public void upgradeBackstagePasses(GildedRose gildedRose) {
         sellIn = sellIn - 1;
         increaseQuality();
